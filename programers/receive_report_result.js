@@ -1,3 +1,4 @@
+//신고 결과 받기
 function solution(id_list, report, k) {
   //정지 되는 인원 찾기
   const reportList = Array(id_list.length).fill([]);
