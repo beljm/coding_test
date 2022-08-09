@@ -93,3 +93,5 @@ const result = solution(numbers, hand);
 console.log('출력:', result);
 
 //처음에 대각선 거리를 생각했는데 손은 좌우로만 움직였다....
+// 유클리드 거리: 대각선 이동
+// 맨하튼 거리: 좌우로만 이동
