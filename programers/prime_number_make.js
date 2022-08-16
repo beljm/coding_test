@@ -27,6 +27,6 @@ const checkPrime = num => {
 
 let nums = [1, 2, 7, 6, 4];
 //4
-//["Prodo님이 들어왔습니다.", "Ryan님이 들어왔습니다.", "Prodo님이 나갔습니다.", "Prodo님이 들어왔습니다."]
+
 const result = solution(nums);
 console.log('최종 결과', result);

@@ -5,14 +5,8 @@ function solution(board, moves) {
   //크레인 움직여 뽑기
   for (let i of moves) {
     // 뽑기 및 중복 삭제
-    console.log(i, 'test==============');
     for (let j = 0; j < board.length; j++) {
       if (board[j][i - 1] !== 0) {
-        console.log(
-          '마지막 데이터 새로운 데이터',
-          bucket[bucket.length - 1],
-          board[j][i - 1],
-        );
         if (bucket.length === 0) {
           bucket.push(board[j][i - 1]);
           board[j][i - 1] = 0;
@@ -25,12 +19,6 @@ function solution(board, moves) {
         break;
       }
     }
-    console.log(board[0]);
-    console.log(board[1]);
-    console.log(board[2]);
-    console.log(board[3]);
-    console.log(board[4]);
-    console.log('버켓', bucket, answer);
   }
   return answer * 2;
 }
