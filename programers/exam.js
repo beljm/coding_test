@@ -9,7 +9,6 @@ function solution(answers) {
   score.push(checkScore(answers, num2));
   score.push(checkScore(answers, num3));
   let maxValue = Math.max(...score);
-  console.log('max', maxValue);
   for (let i = 0; i < score.length; i++) {
     if (score[i] === maxValue) {
       answer.push(i + 1);
