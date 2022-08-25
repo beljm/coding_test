@@ -4,7 +4,6 @@ function solution(n, lost, reserve) {
   lost.sort();
   reserve.sort();
   for (let i of lost) {
-    console.log(i);
     if (reserve.includes(i)) {
       self.push(i);
     }
@@ -46,3 +45,12 @@ let reserve = [2, 3, 4];
 // 5
 const result = solution(n, lost, reserve);
 console.log('최종 결과', result);
+
+//good code
+// function solution(n, lost, reserve) {
+//     return n - lost.filter(a => {
+//         const b = reserve.find(r => Math.abs(r-a) <= 1)
+//         if(!b) return true
+//         reserve = reserve.filter(r => r !== b)
+//     }).length
+// }
