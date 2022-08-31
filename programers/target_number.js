@@ -1,8 +1,6 @@
 //타겟 넘버
 function solution(numbers, target) {
   var answer = 0;
-  console.log('==============');
-  console.log(numbers, target);
   if (numbers.length <= 1) {
     return Math.abs(target) === numbers[0] ? 1 : 0;
   }
