@@ -15,3 +15,11 @@ let b = 5;
 
 let result = solution(a, b);
 console.log('결과:', result);
+
+//good code
+// function adder(a, b){
+//     var result = 0
+//     //함수를 완성하세요
+
+//     return (a+b)*(Math.abs(b-a)+1)/2;
+// }
