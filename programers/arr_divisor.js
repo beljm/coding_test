@@ -15,3 +15,9 @@ let divisor = 5;
 
 let result = solution(arr, divisor);
 console.log('출력:', result);
+
+//good code
+// function solution(arr, divisor) {
+//     var answer = arr.filter(v => v%divisor == 0);
+//     return answer.length == 0 ? [-1] : answer.sort((a,b) => a-b);
+// }
