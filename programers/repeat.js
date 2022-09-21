@@ -19,3 +19,8 @@ let n = 3;
 
 let result = solution(n);
 console.log('결과:', result);
+
+//good code
+// const waterMelon = n => {
+//     return '수박'.repeat(n/2) + (n%2 === 1 ? '수' : '');
+// }
