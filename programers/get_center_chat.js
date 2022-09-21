@@ -13,3 +13,11 @@ let s = 'qwer';
 
 const result = solution(s);
 console.log('출력:', result);
+
+//good code
+// function solution(s) {
+//   return s.slice(
+//     s.length / 2 - 1,
+//     s.length % 2 === 0 ? s.length / 2 + 1 : s.length / 2,
+//   );
+// }
