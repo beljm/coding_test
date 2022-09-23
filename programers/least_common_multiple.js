@@ -1,7 +1,6 @@
 //최소 공배수
 function solution(arr) {
-  arr = arr.sort((a, b) => b - a);
-  let lcm = arr[0];
+  let lcm = Math.max(...arr);
   let count = 1;
   while (arr.filter(ele => (lcm * count) % ele === 0).length !== arr.length) {
     count++;
