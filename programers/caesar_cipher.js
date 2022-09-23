@@ -24,10 +24,3 @@ let n = 4;
 
 let result = solution(s, n);
 console.log('출력:', result);
-
-//a 97
-//z 122
-//A 65
-//Z 90
-// console.log('Z'.charCodeAt());
-// String.fromCharCode
