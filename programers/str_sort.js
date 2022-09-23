@@ -1,19 +1,12 @@
 //문자열 내 마음대로 정렬하기
 function solution(strings, n) {
-  let arr = [];
-  for (let i of strings) {
-    arr.push({ key: i[n], value: i });
-  }
-  arr = arr.sort((a, b) => {
-    if (a.key > b.key) return 1;
-    if (a.key < b.key) return -1;
-    if (a.key === b.key) {
-      if (a.value > b.value) return 1;
-      if (a.value < b.value) return -1;
+  return strings.sort((a, b) => {
+    if (a[n] > b[n]) return 1;
+    if (a[n] < b[n]) return -1;
+    if (a[n] === b[n]) {
+      if (a > b) return 1;
+      if (a < b) return -1;
     }
-  });
-  return arr.map(ele => {
-    return ele.value;
   });
 }
 
