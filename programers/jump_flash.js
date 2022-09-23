@@ -20,3 +20,6 @@ let n = 5000;
 
 const result = solution(n);
 console.log('출력:', result);
+
+//good code
+// const solution = (n) => n.toString(2).match(/1/g).length;
