@@ -5,13 +5,8 @@ function solution(n, arr1, arr2) {
     let val1 = arr1[i].toString(2).padStart(n, '0').split('');
     let val2 = arr2[i].toString(2).padStart(n, '0').split('');
     let cipher = '';
-    console.log(val1, val2);
     for (let j = 0; j < n; j++) {
-      if (val1[j] === '1' || val2[j] === '1') {
-        cipher += '#';
-      } else {
-        cipher += ' ';
-      }
+      val1[j] === '1' || val2[j] === '1' ? (cipher += '#') : (cipher += ' ');
     }
     answer.push(cipher);
   }
