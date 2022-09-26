@@ -9,7 +9,6 @@ function solution(s) {
             else return ele;
         }).join(''))
     }
-    
     return answer.join(' ');
 }
 
