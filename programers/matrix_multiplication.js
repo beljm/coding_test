@@ -12,7 +12,6 @@ function solution(arr1, arr2) {
     }
     answer.push(tempArr);
   }
-
   return answer;
 }
 
