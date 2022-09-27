@@ -2,6 +2,7 @@
 function solution(a, b) {
   let temp = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
   let date = new Date(2016, a - 1, b);
+  //   let date = new Date(`2016-${a}-${b}`);
   return temp[date.getDay()];
 }
 
