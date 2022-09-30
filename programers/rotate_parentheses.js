@@ -1,9 +1,11 @@
 //괄호 회전하기
 function solution(s) {
-  let map = new Map();
-  map.set(')', '(');
-  map.set('}', '{');
-  map.set(']', '[');
+  let mapArr = [
+    [')', '('],
+    ['}', '{'],
+    [']', '['],
+  ];
+  let map = new Map(mapArr);
   let count = 0;
   let arr = s.split('');
   for (let i = 0; i < s.length - 1; i++) {
@@ -19,7 +21,7 @@ function solution(s) {
         }
         stack.pop();
       }
-      j === tempArr.length - 1 ? count++ : null;
+      j === tempArr.length - 1 && stack.length === 0 ? count++ : null;
     }
   }
   return count;
