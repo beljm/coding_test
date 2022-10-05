@@ -3,7 +3,6 @@ function solution(s) {
   let answer = [];
   let transS = s.split(/},{|{{|}}/g);
   transS.sort((a, b) => a.length - b.length);
-  // .slice(1, s.length - 1)
   for (let i of transS) {
     let tempArr = i.split(',');
     tempArr = tempArr.filter(ele => !answer.includes(Number(ele)));
